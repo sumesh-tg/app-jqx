@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<H2>JQXGRID</H2>
+<jqxGrid 
+    [width]="850" [source]="dataAdapter" [columns]="columns"
+    [columnsresize]="true" [sortable]="true" [editable]="editable" (onCellclick)="onClickFunction()">
+</jqxGrid>
+
+<h2>Jqx Bar Gauge </h2>
+
+<jqxBarGauge 
+    [width]="600" [height]="600" [max]="150" 
+    [colorScheme]="'scheme02'" [values]="values">
+</jqxBarGauge>
+
+<router-outlet></router-outlet>
